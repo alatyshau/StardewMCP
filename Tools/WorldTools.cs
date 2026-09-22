@@ -1035,7 +1035,7 @@ public static class WorldTools
         if (tokens[0].Equals("R", StringComparison.OrdinalIgnoreCase) && tokens.Length >= 3)
         {
             int.TryParse(tokens[2], out var amt);
-            var name = ItemRegistry.GetDataOrErrorItem($"(R){tokens[1]}").DisplayName;
+            var name = ItemRegistry.GetDataOrErrorItem($"(O){tokens[1]}").DisplayName;
             return amt > 1 ? $"{name} x{amt}" : name;
         }
 
